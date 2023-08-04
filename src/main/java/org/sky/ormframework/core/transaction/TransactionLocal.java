@@ -18,4 +18,8 @@ public class TransactionLocal {
     public static Connection get(){
         return transactionLocal.get();
     }
+
+    public static void remove(){
+        transactionLocal.remove();
+    }
 }
