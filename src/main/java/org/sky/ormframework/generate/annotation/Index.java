@@ -1,5 +1,7 @@
 package org.sky.ormframework.generate.annotation;
 
+import org.sky.ormframework.generate.enums.IndexType;
+
 import java.lang.annotation.*;
 
 /**
@@ -9,6 +11,11 @@ import java.lang.annotation.*;
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
+@Target({ElementType.FIELD, ElementType.TYPE})
 public @interface Index {
+
+    IndexType indexType();
+    String indexName();
+    String[] indexColumn();
+
 }

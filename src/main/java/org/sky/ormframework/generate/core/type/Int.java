@@ -5,7 +5,7 @@ package org.sky.ormframework.generate.core.type;
  *
  * int 类型
  */
-public class Int {
+public class Int extends Type{
 
     private int length;
 
