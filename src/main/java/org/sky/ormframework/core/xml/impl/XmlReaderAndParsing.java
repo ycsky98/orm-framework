@@ -3,7 +3,6 @@ package org.sky.ormframework.core.xml.impl;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;
-import org.sky.ormframework.core.xml.XmlConvert;
 import org.sky.ormframework.core.xml.XmlParsing;
 import org.sky.ormframework.core.xml.XmlReader;
 

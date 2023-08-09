@@ -27,6 +27,23 @@ public class Table {
         return this;
     }
 
+    public Table column(String name, Type type, String comment) {
+        this.columns.add(new Column(name, type, comment));
+        return this;
+    }
+
+    public List<Column> getColumns(){
+        return this.columns;
+    }
+
+    public List<IndexSetting> getIndices(){
+        return this.indices;
+    }
+
+    public String getTableName(){
+        return this.tableName;
+    }
+
     public IndexSetting index(String indexName) {
         IndexSetting indexSetting = new IndexSetting(indexName);
         indices.add(indexSetting);

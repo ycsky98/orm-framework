@@ -14,6 +14,8 @@ public class TransactionCommit {
      * 在多线程下进行事务删除
      * <pre>
      *     new Thread(()->{
+     *         ..........
+     *         Connection connection = pool.getConnection();
      *         TransactionLocal.set(connection);
      *         ........
      *         TransactionCommit.commitForThread();
